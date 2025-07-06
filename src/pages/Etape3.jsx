@@ -27,7 +27,7 @@ export default function Etape3() {
     economie: 240
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+ const handleSubmit = (e) => {
     e.preventDefault();
     setFormSent(true);
   };
