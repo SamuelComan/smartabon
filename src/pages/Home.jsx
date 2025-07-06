@@ -20,17 +20,17 @@ export default function Home() {
       </section>
 
       <section className="py-16 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-semibold mb-4 text-center">Pourquoi SmartAbonnement ?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-          <div className="bg-gray-100 p-6 rounded-2xl shadow">
-            <h3 className="text-xl font-bold mb-2">Des économies garanties</h3>
-            <p>Jusqu'à 350€/an économisés en changeant de fournisseur télécom.</p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-2xl shadow">
-            <h3 className="text-xl font-bold mb-2">Analyse ultra personnalisée</h3>
-            <p>Choisissez vos lignes mobiles, TV, Internet et fixe selon vos besoins.</p>
-          </div>
-          <div className="bg-gray-100 p-6 rounded-2xl shadow">
+  <h2 className="text-3xl font-semibold mb-4 text-center fancy-gradient">Pourquoi SmartAbonnement ?</h2>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+    <div className="bg-gray-100 p-6 rounded-2xl shadow cool-shadow">
+      <h3 className="text-xl font-bold mb-2">Des économies garanties</h3>
+      <p>Jusqu'à 350€/an économisés en changeant de fournisseur télécom.</p>
+    </div>
+    <div className="bg-gray-100 p-6 rounded-2xl shadow cool-shadow">
+      <h3 className="text-xl font-bold mb-2">Analyse ultra personnalisée</h3>
+      <p>Choisissez vos lignes mobiles, TV, Internet et fixe selon vos besoins.</p>
+    </div>
+    <div className="bg-gray-100 p-6 rounded-2xl shadow cool-shadow">
             <h3 className="text-xl font-bold mb-2">Offres fiables et actualisées</h3>
             <p>Nous ne proposons que des offres partenaires validées sur le marché belge.</p>
           </div>

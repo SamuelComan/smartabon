@@ -36,7 +36,7 @@ export default function Etape3() {
     <div className="p-6 max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold mb-6 text-center text-green-700">🎉 Résumé de votre meilleure offre</h1>
 
-      <Card className="border-l-4 border-green-400 bg-green-50 mb-6">
+      <Card className="border-l-4 border-gradient-to-r from-green-400 to-teal-500 bg-green-50 mb-6 cool-shadow">
         <CardContent className="p-6 space-y-3">
           <h2 className="text-xl font-semibold text-green-800">Offre sélectionnée chez {offre.operateur}</h2>
           <p><strong>Prix total estimé :</strong> {offre.total}€/mois</p>
@@ -74,7 +74,9 @@ export default function Etape3() {
             <Label htmlFor="msg">Message optionnel</Label>
             <Input id="msg" value={message} onChange={(e) => setMessage(e.target.value)} />
           </div>
-          <Button type="submit" className="w-full bg-green-600 text-white hover:bg-green-700">Envoyer ma demande</Button>
+          <Button type="submit" className="w-full bg-green-600 text-white glow-button hover:bg-green-700">
+            Envoyer ma demande
+          </Button>
         </form>
       ) : (
         <div className="text-center text-green-700 text-lg font-semibold mt-6">

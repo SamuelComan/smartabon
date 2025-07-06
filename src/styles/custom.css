@@ -1,0 +1,94 @@
+/* src/styles/custom.css */
+
+/* Container shadow & card look */
+.cool-shadow {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+/* Gradient headings for main titles */
+.fancy-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Buttons with glowing effect */
+.glow-button {
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+}
+.glow-button:hover,
+.glow-button:focus {
+  box-shadow: 0 0 15px 3px rgba(102, 126, 234, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Gradient borders for cards */
+.border-gradient {
+  border-left-width: 8px;
+  border-style: solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Label styling */
+.custom-label {
+  font-weight: 600;
+  color: #4b5563; /* Tailwind gray-700 */
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/* Input focus style override */
+input[type="number"],
+select {
+  border: 2px solid #cbd5e1; /* Tailwind slate-300 */
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  transition: border-color 0.3s ease;
+  font-size: 1rem;
+}
+
+input[type="number"]:focus,
+select:focus {
+  border-color: #667eea; /* blue-500 */
+  outline: none;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Info text styling */
+.info-text {
+  font-size: 0.875rem;
+  color: #2563eb; /* Tailwind blue-600 */
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-top: 0.25rem;
+}
+
+/* Responsive grid enhancements */
+.grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Smaller text for subtitles */
+.subtext {
+  font-size: 0.875rem;
+  color: #6b7280; /* Tailwind gray-500 */
+}
+
+/* Card content padding */
+.card-content-padding {
+  padding: 1.25rem;
+}
+
+/* Special button sizes */
+.btn-lg {
+  font-size: 1.125rem;
+  padding: 0.75rem 2rem;
+}

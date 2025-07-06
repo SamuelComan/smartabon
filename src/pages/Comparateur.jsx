@@ -122,14 +122,14 @@ export default function Comparateur3() {
   };
 
   return (
-    <div className="p-6 max-w-4xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center">Comparateur 3 — Simulation personnalisée</h1>
+    <div className="p-6 max-w-4xl mx-auto cool-shadow">
+    <h1 className="text-3xl mb-6 text-center fancy-gradient">Comparateur 3 — Simulation personnalisée</h1>
 
-      <Card className="mb-6 border-l-4 border-blue-400 bg-blue-50">
-        <CardContent className="space-y-4 pt-6">
-          <h2 className="text-xl font-semibold text-blue-800 mb-2 flex items-center gap-2">
-            <Sparkles className="text-blue-500" /> Configurez votre pack actuel
-          </h2>
+    <Card className="mb-6 border-l-8 border-gradient bg-blue-50">
+      <CardContent className="space-y-4 card-content-padding">
+        <h2 className="text-xl font-semibold text-blue-800 mb-2 flex items-center gap-2">
+          <Sparkles className="text-blue-500" /> Configurez votre pack actuel
+        </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <label className="flex items-center gap-2"><input type="checkbox" checked={internet} onChange={() => setInternet(!internet)} /><Wifi size={18}/> Internet</label>
             <label className="flex items-center gap-2"><input type="checkbox" checked={tv} onChange={() => setTv(!tv)} /><Tv size={18}/> TV</label>
@@ -171,7 +171,7 @@ export default function Comparateur3() {
             </p>
           </div>
           <div className="pt-4 text-center">
-            <Button onClick={handleCompare} className="bg-blue-700 text-white hover:bg-blue-800 text-lg px-6 py-3">
+            <Button className="bg-blue-700 text-white hover:bg-blue-800 btn-lg glow-button w-full">
               Voir les meilleures offres
             </Button>
           </div>
@@ -205,6 +205,7 @@ export default function Comparateur3() {
           ))}
         </div>
       )}
-    </div>
+    
+  </div>
   );
 }
